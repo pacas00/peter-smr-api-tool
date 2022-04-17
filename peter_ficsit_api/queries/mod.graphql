@@ -1,0 +1,47 @@
+query GetMod($mod: String!) {
+  mod: getModByIdOrReference(modIdOrReference: $mod) {
+    id
+    created_at
+    name
+    full_description
+    short_description
+    logo
+    mod_reference
+    source_url
+    hidden
+    latestVersions {
+      alpha {
+        id
+        link
+        version
+        created_at
+        sml_version
+      }
+      beta {
+        id
+        link
+        version
+        created_at
+        sml_version
+      }
+      release {
+        id
+        link
+        version
+        created_at
+        sml_version
+      }
+    }
+    downloads
+    views
+    authors {
+      role
+      user_id
+      user {
+        id
+        username
+        avatar
+      }
+    }
+  }
+}

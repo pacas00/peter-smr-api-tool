@@ -1,0 +1,5 @@
+
+extend scalar Upload
+  @serializationType(name: "global::peter_ficsit_api.UploadData")
+  @runtimeType(name: "global::peter_ficsit_api.UploadData")
+

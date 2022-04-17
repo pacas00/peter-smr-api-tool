@@ -1,0 +1,23 @@
+query GetModVersion($version: VersionID!) {
+  getVersion(versionId: $version) {
+    id
+    version
+    stability
+    sml_version
+    downloads
+    created_at
+    changelog
+    link
+    hash
+    size
+    mod {
+      id
+      mod_reference
+      name
+      authors {
+        role
+        user_id
+      }
+    }
+  }
+}

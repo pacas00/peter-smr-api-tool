@@ -1,0 +1,12 @@
+{
+  "schema": "schema.graphql",
+  "documents": "**/*.graphql",
+  "extensions": {
+    "strawberryShake": {
+      "name": "ficsit_api",
+      "namespace": "peter_ficsit_api.GraphQL",
+      "url": "https://api.ficsit.dev/v2/query/",
+      "dependencyInjection": true
+    }
+  }
+}

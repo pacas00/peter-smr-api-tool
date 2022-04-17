@@ -1,0 +1,31 @@
+query GetMods($offset: Int!, $limit: Int!, $search: String, $order: Order, $orderBy: ModFields) {
+  getMods(filter: { limit: $limit, offset: $offset, search: $search, order: $order, order_by: $orderBy }) {
+    count
+    mods {
+      id
+      mod_reference
+      name
+      logo
+      views
+      downloads
+      short_description
+      latestVersions {
+        alpha {
+          id
+          version
+          sml_version
+        }
+        beta {
+          id
+          version
+          sml_version
+        }
+        release {
+          id
+          version
+          sml_version
+        }
+      }
+    }
+  }
+}

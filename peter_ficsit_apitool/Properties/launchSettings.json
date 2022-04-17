@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "peter_ficsit_apitool": {
+      "commandName": "Project",
+      "commandLineArgs": " --Command ListMods"
+    }
+  }
+}
